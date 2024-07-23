@@ -1,0 +1,161 @@
+devops@MIL013 MINGW64 ~
+$ pwd
+/c/Users/devops
+
+devops@MIL013 MINGW64 ~
+$ cd D:
+
+devops@MIL013 MINGW64 /d
+$ mkdir sudip71
+
+devops@MIL013 MINGW64 /d
+$ mkdir git23july
+
+devops@MIL013 MINGW64 /d
+$ cd git23july/
+
+devops@MIL013 MINGW64 /d/git23july
+$ cd ..
+
+devops@MIL013 MINGW64 /d
+$ cd sudip71/git23july/
+
+devops@MIL013 MINGW64 /d/sudip71/git23july
+$ git clone https://github.com/Sudip-HITkolkata/gitday1.git
+Cloning into 'gitday1'...
+warning: You appear to have cloned an empty repository.
+
+devops@MIL013 MINGW64 /d/sudip71/git23july
+$ ls
+gitday1/
+
+devops@MIL013 MINGW64 /d/sudip71/git23july
+$ cd gitday1/
+
+devops@MIL013 MINGW64 /d/sudip71/git23july/gitday1 (main)
+$ ls
+sud.txt
+
+devops@MIL013 MINGW64 /d/sudip71/git23july/gitday1 (main)
+$ git status
+On branch main
+
+No commits yet
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        sud.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+devops@MIL013 MINGW64 /d/sudip71/git23july/gitday1 (main)
+$ git add *
+
+devops@MIL013 MINGW64 /d/sudip71/git23july/gitday1 (main)
+$ git status
+On branch main
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+        new file:   sud.txt
+
+
+devops@MIL013 MINGW64 /d/sudip71/git23july/gitday1 (main)
+$ git config user.name "sudip"
+
+devops@MIL013 MINGW64 /d/sudip71/git23july/gitday1 (main)
+$ git config user.email "bhuniasudipkumar710@gmail.com"
+
+devops@MIL013 MINGW64 /d/sudip71/git23july/gitday1 (main)
+$ git commit -m "first commit"
+[main (root-commit) 27d6385] first commit
+ 1 file changed, 1 insertion(+)
+ create mode 100644 sud.txt
+
+devops@MIL013 MINGW64 /d/sudip71/git23july/gitday1 (main)
+$ git push origin main
+info: please complete authentication in your browser...
+Enumerating objects: 3, done.
+Counting objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 215 bytes | 215.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+To https://github.com/Sudip-HITkolkata/gitday1.git
+ * [new branch]      main -> main
+
+devops@MIL013 MINGW64 /d/sudip71/git23july/gitday1 (main)
+$ git push origin main
+Everything up-to-date
+
+devops@MIL013 MINGW64 /d/sudip71/git23july/gitday1 (main)
+$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+nothing to commit, working tree clean
+
+devops@MIL013 MINGW64 /d/sudip71/git23july/gitday1 (main)
+$ ls
+sud.txt
+
+devops@MIL013 MINGW64 /d/sudip71/git23july/gitday1 (main)
+$ git pull
+remote: Enumerating objects: 4, done.
+remote: Counting objects: 100% (4/4), done.
+remote: Compressing objects: 100% (2/2), done.
+remote: Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+Unpacking objects: 100% (3/3), 949 bytes | 5.00 KiB/s, done.
+From https://github.com/Sudip-HITkolkata/gitday1
+   27d6385..49024eb  main       -> origin/main
+Updating 27d6385..49024eb
+Fast-forward
+ sudipgit1 | 1 +
+ 1 file changed, 1 insertion(+)
+ create mode 100644 sudipgit1
+
+devops@MIL013 MINGW64 /d/sudip71/git23july/gitday1 (main)
+$ ls
+sud.txt  sudipgit1
+***************************change in local then update git***************************************
+
+devops@MIL013 MINGW64 /d/sudip71/git23july/gitday1 (main)
+$ cat sudipgit1
+first class
+
+devops@MIL013 MINGW64 /d/sudip71/git23july/gitday1 (main)
+$ git add *
+
+devops@MIL013 MINGW64 /d/sudip71/git23july/gitday1 (main)
+$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        modified:   sudipgit1
+
+
+devops@MIL013 MINGW64 /d/sudip71/git23july/gitday1 (main)
+$ git commit -m "first commit"
+[main d0f8d51] first commit
+ 1 file changed, 2 insertions(+)
+
+devops@MIL013 MINGW64 /d/sudip71/git23july/gitday1 (main)
+$ ls
+sud.txt  sudipgit1
+
+devops@MIL013 MINGW64 /d/sudip71/git23july/gitday1 (main)
+$ git push origin main
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 300 bytes | 300.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+To https://github.com/Sudip-HITkolkata/gitday1.git
+   49024eb..d0f8d51  main -> main
+
+devops@MIL013 MINGW64 /d/sudip71/git23july/gitday1 (main)
+$
+
